@@ -8,14 +8,15 @@
   // 图标，一般偷懒全部用一个尺寸的也没问题
   "icons": {
     "16": "static/images/upload.png",
-    "48": "static/images/upload.png",
-    "128": "static/images/upload.png"
+
   },
   // 会一直常驻的后台JS或后台页面
   "background": {
     // 2种指定方式，如果指定JS，那么会自动生成一个背景页
-    "page": "background.html"
+    "page": "background.html",
     //"scripts": ["js/background.js"]
+    // 使后台可以在需要时被加载，空闲时被卸载
+    "persistent": false
   },
   // 浏览器右上角图标设置
   "browser_action": {
@@ -73,4 +74,5 @@
     // 添加一些默认的样式，推荐使用
     "chrome_style": true
   }
+
 }
